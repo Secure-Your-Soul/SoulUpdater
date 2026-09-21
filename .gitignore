@@ -1,0 +1,7 @@
+# Dependencies
+node_modules
+# config
+config.json
+# output files
+Output/
+*.bun-build

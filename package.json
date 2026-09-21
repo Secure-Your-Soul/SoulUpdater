@@ -1,0 +1,30 @@
+{
+  "name": "soulupdater",
+  "displayName": "SoulUpdater",
+  "version": "1.0.0v-Dev",
+  "description": "Secure Your Soul Programs Updater",
+  "main": "Output/app.js",
+  "bin": "Output/app.js",
+  "scripts": {
+    "start": "node Output/app.js",
+    "build": "cd ../SoulAPI/TypeScript && npx tsc && cd ../../SoulUpdater && npx tsc && bun build ./app.ts --compile --minify --target=bun-windows-x64 --outfile=Output/SoulUpdater.exe --all"
+  },
+  "keywords": [],
+  "author": "Denis Rudolf Damian Kontek (Secure Your Soul)",
+  "publisher": "Denis Rudolf Damian Kontek (Secure Your Soul)",
+  "company": {
+    "name": "Secure Your Soul"
+  },
+  "repository": {
+    "url": "https://github.com/Secure-Your-Soul/SoulUpdater"
+  },
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@secureyoursoul/soulapi": "file:../SoulApi"
+  }
+}
